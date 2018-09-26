@@ -12,7 +12,9 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.3",
-    "nodemon": "^1.18.4"
+    "express-fileupload": "^1.0.0-alpha.1",
+    "nodemon": "^1.18.4",
+    "xml2js": "^0.4.19"
   },
   "devDependencies": {
     "concurrently": "^3.5.0"

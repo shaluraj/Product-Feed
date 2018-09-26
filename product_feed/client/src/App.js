@@ -30,6 +30,17 @@ class App extends Component {
           <h1 className="App-title">Welcome to React</h1>
         </header>
         <p className="App-intro">{this.state.response}</p>
+        <form
+          method="post"
+          id="uploadForm"
+          ref="uploadForm"
+          encType="multipart/form-data"
+          className="m-4"
+          action="http://localhost:5000/upload"
+        >
+          <input type="file" name="feed" accept=".xml" />
+          <input type="submit" value="Upload!" />
+        </form>
       </div>
     );
   }
